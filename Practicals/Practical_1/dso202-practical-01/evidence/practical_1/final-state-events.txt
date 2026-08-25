@@ -1,0 +1,61 @@
+LAST SEEN   TYPE      REASON              OBJECT                                 MESSAGE
+31m         Normal    SuccessfulCreate    replicaset/web-deployment-76ddf5fcf9   Created pod: web-deployment-76ddf5fcf9-nd2xv
+31m         Normal    Scheduled           pod/web-deployment-76ddf5fcf9-nd2xv    Successfully assigned dso202-practical-01/web-deployment-76ddf5fcf9-nd2xv to worker-node-2
+31m         Normal    Pulled              pod/web-deployment-76ddf5fcf9-gkhw8    Container image "nginx:1.30-alpine" already present on machine and can be accessed by the pod
+31m         Normal    Scheduled           pod/web-deployment-76ddf5fcf9-gkhw8    Successfully assigned dso202-practical-01/web-deployment-76ddf5fcf9-gkhw8 to worker-node-1
+31m         Normal    Killing             pod/web-deployment-76ddf5fcf9-4bwmf    Stopping container web
+31m         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled up replica set web-deployment-76ddf5fcf9 from 3 to 5
+31m         Normal    SuccessfulCreate    replicaset/web-deployment-76ddf5fcf9   Created pod: web-deployment-76ddf5fcf9-gkhw8
+31m         Normal    Created             pod/web-deployment-76ddf5fcf9-gkhw8    Container created
+31m         Normal    Scheduled           pod/web-deployment-76ddf5fcf9-p7h8c    Successfully assigned dso202-practical-01/web-deployment-76ddf5fcf9-p7h8c to worker-node-2
+31m         Normal    SuccessfulCreate    replicaset/web-deployment-76ddf5fcf9   Created pod: web-deployment-76ddf5fcf9-p7h8c
+31m         Normal    Started             pod/web-deployment-76ddf5fcf9-nd2xv    Container started
+31m         Normal    Pulled              pod/web-deployment-76ddf5fcf9-nd2xv    Container image "nginx:1.30-alpine" already present on machine and can be accessed by the pod
+31m         Normal    Pulled              pod/web-deployment-76ddf5fcf9-p7h8c    Container image "nginx:1.30-alpine" already present on machine and can be accessed by the pod
+31m         Normal    Created             pod/web-deployment-76ddf5fcf9-p7h8c    Container created
+31m         Normal    Created             pod/web-deployment-76ddf5fcf9-nd2xv    Container created
+31m         Normal    Started             pod/web-deployment-76ddf5fcf9-gkhw8    Container started
+31m         Normal    Started             pod/web-deployment-76ddf5fcf9-p7h8c    Container started
+31m         Normal    SuccessfulDelete    replicaset/web-deployment-76ddf5fcf9   Deleted pod: web-deployment-76ddf5fcf9-p7h8c
+31m         Normal    SuccessfulDelete    replicaset/web-deployment-76ddf5fcf9   Deleted pod: web-deployment-76ddf5fcf9-nd2xv
+31m         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled down replica set web-deployment-76ddf5fcf9 from 5 to 3
+31m         Normal    Killing             pod/web-deployment-76ddf5fcf9-p7h8c    Stopping container web
+31m         Normal    Killing             pod/web-deployment-76ddf5fcf9-nd2xv    Stopping container web
+30m         Normal    Scheduled           pod/web-deployment-67499b7844-zttc6    Successfully assigned dso202-practical-01/web-deployment-67499b7844-zttc6 to worker-node-2
+30m         Normal    SuccessfulCreate    replicaset/web-deployment-67499b7844   Created pod: web-deployment-67499b7844-zttc6
+30m         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled up replica set web-deployment-67499b7844 from 0 to 1
+30m         Normal    BackOff             pod/web-deployment-67499b7844-zttc6    Back-off pulling image "nginx:9.99-does-not-exist"
+30m         Warning   Failed              pod/web-deployment-67499b7844-zttc6    Error: ImagePullBackOff
+30m         Normal    Pulling             pod/web-deployment-67499b7844-zttc6    Pulling image "nginx:9.99-does-not-exist"
+30m         Warning   Failed              pod/web-deployment-67499b7844-zttc6    Failed to pull image "nginx:9.99-does-not-exist": rpc error: code = NotFound desc = failed to pull and unpack image "docker.io/library/nginx:9.99-does-not-exist": failed to resolve reference "docker.io/library/nginx:9.99-does-not-exist": docker.io/library/nginx:9.99-does-not-exist: not found
+30m         Warning   Failed              pod/web-deployment-67499b7844-zttc6    Error: ErrImagePull
+30m         Normal    SuccessfulDelete    replicaset/web-deployment-67499b7844   Deleted pod: web-deployment-67499b7844-zttc6
+30m         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled down replica set web-deployment-67499b7844 from 1 to 0
+2m          Normal    SuccessfulCreate    replicaset/web-deployment-5d8696bcfb   Created pod: web-deployment-5d8696bcfb-tv54p
+2m          Normal    Scheduled           pod/web-deployment-5d8696bcfb-tv54p    Successfully assigned dso202-practical-01/web-deployment-5d8696bcfb-tv54p to worker-node-2
+2m          Normal    ScalingReplicaSet   deployment/web-deployment              Scaled up replica set web-deployment-5d8696bcfb from 0 to 1
+119s        Normal    Started             pod/web-deployment-5d8696bcfb-tv54p    Container started
+119s        Normal    Created             pod/web-deployment-5d8696bcfb-tv54p    Container created
+119s        Normal    Pulled              pod/web-deployment-5d8696bcfb-tv54p    Container image "nginx:1.30-alpine" already present on machine and can be accessed by the pod
+109s        Normal    SuccessfulCreate    replicaset/web-deployment-5d8696bcfb   Created pod: web-deployment-5d8696bcfb-nmwb8
+109s        Normal    SuccessfulDelete    replicaset/web-deployment-76ddf5fcf9   Deleted pod: web-deployment-76ddf5fcf9-gkhw8
+109s        Normal    Killing             pod/web-deployment-76ddf5fcf9-gkhw8    Stopping container web
+109s        Normal    ScalingReplicaSet   deployment/web-deployment              Scaled up replica set web-deployment-5d8696bcfb from 1 to 2
+109s        Normal    ScalingReplicaSet   deployment/web-deployment              Scaled down replica set web-deployment-76ddf5fcf9 from 3 to 2
+109s        Normal    Scheduled           pod/web-deployment-5d8696bcfb-nmwb8    Successfully assigned dso202-practical-01/web-deployment-5d8696bcfb-nmwb8 to worker-node-1
+109s        Normal    Pulled              pod/web-deployment-5d8696bcfb-nmwb8    Container image "nginx:1.30-alpine" already present on machine and can be accessed by the pod
+109s        Normal    Created             pod/web-deployment-5d8696bcfb-nmwb8    Container created
+109s        Normal    Started             pod/web-deployment-5d8696bcfb-nmwb8    Container started
+98s         Normal    Started             pod/web-deployment-5d8696bcfb-shx2c    Container started
+98s         Normal    SuccessfulDelete    replicaset/web-deployment-76ddf5fcf9   Deleted pod: web-deployment-76ddf5fcf9-ds2q5
+98s         Normal    Scheduled           pod/web-deployment-5d8696bcfb-shx2c    Successfully assigned dso202-practical-01/web-deployment-5d8696bcfb-shx2c to worker-node-2
+98s         Normal    Pulled              pod/web-deployment-5d8696bcfb-shx2c    Container image "nginx:1.30-alpine" already present on machine and can be accessed by the pod
+98s         Normal    Created             pod/web-deployment-5d8696bcfb-shx2c    Container created
+98s         Normal    SuccessfulCreate    replicaset/web-deployment-5d8696bcfb   Created pod: web-deployment-5d8696bcfb-shx2c
+98s         Normal    Killing             pod/web-deployment-76ddf5fcf9-ds2q5    Stopping container web
+98s         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled down replica set web-deployment-76ddf5fcf9 from 2 to 1
+98s         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled up replica set web-deployment-5d8696bcfb from 2 to 3
+87s         Normal    SuccessfulDelete    replicaset/web-deployment-76ddf5fcf9   Deleted pod: web-deployment-76ddf5fcf9-l7vgx
+87s         Normal    Killing             pod/web-deployment-76ddf5fcf9-l7vgx    Stopping container web
+87s         Normal    ScalingReplicaSet   deployment/web-deployment              Scaled down replica set web-deployment-76ddf5fcf9 from 1 to 0
+38s         Warning   Unhealthy           pod/web-deployment-5d8696bcfb-nmwb8    Readiness probe failed: HTTP probe failed with statuscode: 404
